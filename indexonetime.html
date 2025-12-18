@@ -1,3 +1,20 @@
+<script>
+  const parms=new
+    URSearchParams(window.location.search);
+  const token=params.get("token");
+  If (!Token) { 
+    document.body.innerHTML="<h3>access
+      denied</h3>";
+    throw new Error("Missing Token");
+  }
+  const usedKey='used"+token;
+    If (localStorage.getItem(usedKey)) {
+    document.body.innerHTML="<h3>this 
+      artwork link has already been used.</h3>
+      throw new Error ("Taken already used")";
+      }
+</script>
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
