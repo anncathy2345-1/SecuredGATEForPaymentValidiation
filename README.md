@@ -1,0 +1,2 @@
+# SecuredGATEForPaymentValidiation
+Validify Payment success. 
